@@ -94,7 +94,7 @@
                     GHIMIRESAUGAT987@GMAIL.COM
                 </p>
                 <p class="copyright">
-                    © 2022 Saugat Ghimire
+                    © <span id="year"></span> Saugat Ghimire
                 </p>
             </div>
         </section>
@@ -125,6 +125,8 @@
                 $(this).addClass("active");
             });
         });
+
+        document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
     <script src="js/main.js"></script>
 </body>
